@@ -22,6 +22,7 @@ jxRequirements:
   cluster:
     chartRepository: http://bucketrepo.jx/bucketrepo/charts
     clusterName: kind
+    environmentGitOwner: gincol
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -36,6 +37,8 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
+    owner: gincol
+    repository: jx
   - ingress:
       domain: ""
       namespaceSubDomain: ""
@@ -60,6 +63,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: gincol
   repository: bucketrepo
   secretStorage: local
   vault: {}
